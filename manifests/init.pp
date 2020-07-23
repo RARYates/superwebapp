@@ -5,6 +5,9 @@
 # @example
 #   include superwebapp
 class superwebapp {
+
+  include apache
+
   file {'/var/www/swa':
     ensure => 'directory',
     owner  => 'apache',
